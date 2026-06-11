@@ -1,0 +1,42 @@
+<adapter-config xsdTargetNamespace="http://xmlns.oracle.com/cloud/adapter/ftp/Send_File_REQUEST/types" name="Send_File_REQUESTPortType" adapter="ftp" wsdlLocation="Send_File_REQUEST.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  <connection-factory location="ics/FtpAdapter">
+    <non-managed-connection managedConnectionFactoryClassName="oracle.tip.adapter.ftp.FTPManagedConnectionFactory">
+      <property name="AuthenticationType" value="password"/>
+      <property name="ChangeDirectory" value="true"/>
+      <property name="DefaultDateFormat" value="MMM d yyyy"/>
+      <property name="EnableFIPSMode" value="false"/>
+      <property name="FtpConnectionType" value="SFTP"/>
+      <property name="Host" value="%%RAJ_FTP2_Host"/>
+      <property name="KeepConnections" value="false"/>
+      <property name="KeystoreAlgorithm" value="SunX509"/>
+      <property name="KeystoreType" value="PKCS12"/>
+      <property name="ListParserKey" value="UNIX"/>
+      <property name="Port" value="%%RAJ_FTP2_Port"/>
+      <property name="PreferredCipherSuite" value="aes128-cbc"/>
+      <property name="ProxyHost" value="www-proxy-brmdc.us.oracle.com"/>
+      <property name="ProxyPort" value="80"/>
+      <property name="ProxyType" value="http"/>
+      <property name="RecentDateFormat" value="MMM d HH:mm"/>
+      <property name="SecurePort" value="990"/>
+      <property name="SftpBlockSize" value="32768"/>
+      <property name="TransportProvider" value="http"/>
+      <property name="UseFtps" value="false"/>
+      <property name="UseProxy" value="true"/>
+      <property name="UseSftp" value="%%RAJ_FTP2_UseSftp"/>
+      <property name="csfMap" value="oracle.cloud.adapter"/>
+      <property name="csfkey" value="c25cf64234e1d1a650f6452d9eec69ea7a85b5d4bef51d6de47fa8b3faf90dea"/>
+    </non-managed-connection>
+  </connection-factory>
+  <endpoint-interaction portType="Send_File_REQUESTPortType" operation="WriteFile">
+    <interaction-spec className="oracle.tip.adapter.ftp.outbound.FTPInteractionSpec">
+      <property name="Append" value="false"/>
+      <property name="FileNamingConvention" value="B2B_DUMMY_FILE_PATTERN"/>
+      <property name="FileType" value="binary"/>
+      <property name="ICSFilePull" value="true"/>
+      <property name="Operation" value="WriteFile"/>
+      <property name="PhysicalDirectory" value="B2B_DUMMY_DIR"/>
+      <property name="UnwrapRootElement" value="true"/>
+      <property name="tradingPartnerMode" value="phase2"/>
+    </interaction-spec>
+  </endpoint-interaction>
+</adapter-config>

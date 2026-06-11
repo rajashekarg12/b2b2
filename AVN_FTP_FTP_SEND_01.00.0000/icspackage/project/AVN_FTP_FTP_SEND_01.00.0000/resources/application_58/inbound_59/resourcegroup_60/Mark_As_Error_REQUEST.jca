@@ -1,0 +1,31 @@
+<adapter-config xsdTargetNamespace="http://xmlns.oracle.com/cloud/adapter/ediAdapter/Mark_As_Error_REQUEST/types" name="Mark_As_Error_REQUESTPortType" adapter="bbtranslationadapter" wsdlLocation="Mark_As_Error_REQUEST.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  <connection-factory location="cloud/CloudAdapter">
+    <non-managed-connection managedConnectionFactoryClassName="oracle.cloud.connector.b2b.RestAdapterConnectionFactory">
+      <property name="applicationVersion" value="1.0"/>
+      <property name="connectionUrl" value="%%PRESEEDED_B2B_TRANSLATOR_CONN_1851_connectionUrl"/>
+      <property name="isCollocated" value="true"/>
+      <property name="securityPolicy" value="NONE"/>
+    </non-managed-connection>
+  </connection-factory>
+  <endpoint-interaction portType="Mark_As_Error_REQUESTPortType" operation="execute">
+    <interaction-spec className="oracle.tip.adapter.cloud.CloudInteractionSpec">
+      <property name="targetOperation" value="execute"/>
+      <property name="operationPath" value="http://xmlns.oracle.com/cloud/adapter/ediAdapter/Mark_As_Error_REQUEST/execute"/>
+      <property name="HTTPHeadersAdded" value="true"/>
+      <property name="HttpVerb" value="POST"/>
+      <property name="RequestElementNS" value="http://xmlns.oracle.com/b2b/edi/generic/error_request"/>
+      <property name="RequestElementName" value="MarkAsErrorInput"/>
+      <property name="RequestMediaType" value="application/xml"/>
+      <property name="ResponseElementNS" value="http://xmlns.oracle.com/b2b/edi/generic/error_response"/>
+      <property name="ResponseElementName" value="MarkAsErrorOutput"/>
+      <property name="ResponseMediaType" value="application/xml"/>
+      <property name="b2b_translate_direction" value="b2b_translate_outbound"/>
+      <property name="b2b_translate_mode" value="b2b_translate_mode_tp"/>
+      <property name="b2b_translate_tp_operation" value="b2b_translate_tp_operation_mark_error"/>
+      <property name="b2b_translate_tp_operation_name" value="Mark As Error"/>
+      <property name="enforceResponseSizeRestriction" value="true"/>
+      <property name="generatePartnerLink" value="false"/>
+      <property name="isCollocated" value="true"/>
+    </interaction-spec>
+  </endpoint-interaction>
+</adapter-config>

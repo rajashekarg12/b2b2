@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<oracle-xsl-webmapper:StateInfo xmlns:oracle-xsl-webmapper="http://www.oracle.com/xsl/webmapper/state" version="1.1">
+    <oracle-xsl-webmapper:ErrorsCount>0</oracle-xsl-webmapper:ErrorsCount>
+    <oracle-xsl-webmapper:WarningsCount>0</oracle-xsl-webmapper:WarningsCount>
+    <oracle-xsl-webmapper:IsImported>false</oracle-xsl-webmapper:IsImported>
+    <oracle-xsl-webmapper:HasMappings>true</oracle-xsl-webmapper:HasMappings>
+    <oracle-xsl-webmapper:StateInfoIsStale>false</oracle-xsl-webmapper:StateInfoIsStale>
+    <oracle-xsl-webmapper:SourcesReferenced>
+        <element xmlns:ns3="http://www.oracle.com/2014/03/ics/fault">ns3:fault</element>
+        <uriAbsoluteLocation>file:/tmp/WC/itg_9fca8213-b4b8-446d-844c-a4718be57104/resources/processor_53/resourcegroup_54/ICSFault.xsd</uriAbsoluteLocation>
+        <param>Write-File-ScopeFaultObject</param>
+        <primary>false</primary>
+    </oracle-xsl-webmapper:SourcesReferenced>
+    <oracle-xsl-webmapper:SourcesReferenced>
+        <element xmlns:ns3="http://xmlns.oracle.com/cloud/adapter/REST/REST-Request/types">ns3:messages</element>
+        <uriAbsoluteLocation>file:/tmp/WC/itg_9fca8213-b4b8-446d-844c-a4718be57104/resources/processor_25/resourcegroup_220/generated.wsdl</uriAbsoluteLocation>
+        <param>Current-Message</param>
+        <primary>false</primary>
+    </oracle-xsl-webmapper:SourcesReferenced>
+    <oracle-xsl-webmapper:AllSources>
+        <element xmlns:ns3="http://xmlns.oracle.com/cloud/adapter/REST/REST_Request_REQUEST/types">ns3:execute</element>
+        <uriAbsoluteLocation>file:/tmp/WC/itg_9fca8213-b4b8-446d-844c-a4718be57104/resources/application_18/outbound_19/resourcegroup_20/REST_Request_REQUEST.wsdl</uriAbsoluteLocation>
+        <primary>true</primary>
+    </oracle-xsl-webmapper:AllSources>
+    <oracle-xsl-webmapper:AllSources>
+        <element xmlns:ns3="http://www.oracle.com/2014/03/ics/fault">ns3:fault</element>
+        <uriAbsoluteLocation>file:/tmp/WC/itg_9fca8213-b4b8-446d-844c-a4718be57104/resources/processor_53/resourcegroup_54/ICSFault.xsd</uriAbsoluteLocation>
+        <param>Write-File-ScopeFaultObject</param>
+        <primary>false</primary>
+    </oracle-xsl-webmapper:AllSources>
+    <oracle-xsl-webmapper:AllSources>
+        <element xmlns:ns3="http://xmlns.oracle.com/cloud/adapter/REST/REST-Request/types">ns3:messages</element>
+        <uriAbsoluteLocation>file:/tmp/WC/itg_9fca8213-b4b8-446d-844c-a4718be57104/resources/processor_25/resourcegroup_220/generated.wsdl</uriAbsoluteLocation>
+        <param>Current-Message</param>
+        <primary>false</primary>
+    </oracle-xsl-webmapper:AllSources>
+    <oracle-xsl-webmapper:AllSources>
+        <element xmlns:ns3="http://www.oracle.com/2014/03/ic/integration/metadata">ns3:metadata</element>
+        <uriAbsoluteLocation>file:/tmp/WC/itg_9fca8213-b4b8-446d-844c-a4718be57104/resources/processor_232/resourcegroup_233/ICSIntegrationMetadata.xsd</uriAbsoluteLocation>
+        <param>self</param>
+        <primary>false</primary>
+    </oracle-xsl-webmapper:AllSources>
+    <oracle-xsl-webmapper:AllSources>
+        <element xmlns:ns3="http://www.oracle.com/2014/03/ic/integration/properties">ns3:properties</element>
+        <uriAbsoluteLocation>file:/tmp/WC/itg_9fca8213-b4b8-446d-844c-a4718be57104/resources/processor_125/resourcegroup_126/ICSIntegrationProperties.xsd</uriAbsoluteLocation>
+        <param>selfProperties</param>
+        <primary>false</primary>
+    </oracle-xsl-webmapper:AllSources>
+    <oracle-xsl-webmapper:AllSources>
+        <param>tracking_var_1</param>
+        <primary>false</primary>
+    </oracle-xsl-webmapper:AllSources>
+    <oracle-xsl-webmapper:AllSources>
+        <param>tracking_var_2</param>
+        <primary>false</primary>
+    </oracle-xsl-webmapper:AllSources>
+    <oracle-xsl-webmapper:AllSources>
+        <param>tracking_var_3</param>
+        <primary>false</primary>
+    </oracle-xsl-webmapper:AllSources>
+</oracle-xsl-webmapper:StateInfo>
