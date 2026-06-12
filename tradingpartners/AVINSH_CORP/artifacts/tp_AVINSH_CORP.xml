@@ -7,7 +7,7 @@
         <ns2:identifier id="531584087610037" identifierType="AS2 Identifier">AVN corp2</ns2:identifier>
     </ns2:identifiers>
     <ns2:inboundAgrs>
-        <ns2:inAgr id="AVN_INBOUND1777380220261" agrName="avn inbound" agrDesc="" docId="TEST_DOC3" backendIntgCode="AVN_FTP_FTP_RECEIVE" backendIntgVersion="01.00.0000" updatedDate="2026-06-10T18:03:01.001+0000" createdDate="2026-04-28T12:43:40.040+0000" lastDeployed="2026-06-10T18:03:01.001+0000" status="active" tpmVersion="phase2">
+        <ns2:inAgr id="AVN_INBOUND1777380220261" agrName="avn inbound" agrDesc="" docId="TEST_DOC" backendIntgCode="AVN_FTP_FTP_RECEIVE" backendIntgVersion="01.00.0000" updatedDate="2026-06-12T03:46:56.056+0000" createdDate="2026-04-28T12:43:40.040+0000" lastDeployed="2026-06-12T03:46:56.056+0000" status="active" tpmVersion="phase2">
             <ns2:params validate="false" fa="true" duplicateCtrlNumCheck="false"/>
         </ns2:inAgr>
         <ns2:inAgr id="AVN_INBOUND21778730010426" agrName="avn inbound2" agrDesc="" docId="TESTDOC2" backendIntgCode="TESTB2BINT" backendIntgVersion="01.00.0000" updatedDate="2026-06-10T18:05:33.033+0000" createdDate="2026-05-14T03:40:10.010+0000" lastDeployed="2026-06-10T18:05:33.033+0000" status="active" tpmVersion="phase2">
