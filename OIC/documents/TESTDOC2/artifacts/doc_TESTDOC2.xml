@@ -1,2 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<b2bdocument><name>testdoc2</name><identifier>TESTDOC2</identifier><description>title2</description><standard>EDIFACT</standard><version>D00A</version><doctype>APERAK</doctype><hasOverride>false</hasOverride><schemaid>TEST_SCHEMA</schemaid><parameters>{"element-separator":"+","subelement-separator":":","segment-terminator":"'","repetition-separator":"*","transaction":"single"}</parameters></b2bdocument>
