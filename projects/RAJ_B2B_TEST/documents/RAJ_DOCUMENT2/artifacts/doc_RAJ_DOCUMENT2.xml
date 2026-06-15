@@ -1,0 +1,2 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<b2bdocument><name>raj document2</name><identifier>RAJ_DOCUMENT2</identifier><description>title66</description><standard>EDIFACT</standard><version>D00A</version><doctype>APERAK</doctype><scope>PRIVATE</scope><hasOverride>false</hasOverride><schemaid>RAJ_SCHEMA</schemaid><parameters>{"element-separator":"+","subelement-separator":":","segment-terminator":"'","repetition-separator":"*","transaction":"single"}</parameters></b2bdocument>
