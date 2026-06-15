@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tradingpartner xmlns:ns2="http://xmlns.oracle.com/b2b/tpm/partners" name="Raj trading partner" code="RAJ_TRADING_PARTNER" description="" version="">
+    <ns2:contacts>
+        <ns2:contact id="15" contactType="Contact Name">av2</ns2:contact>
+    </ns2:contacts>
+    <ns2:identifiers>
+        <ns2:identifier id="604500079445274" identifierType="Name">av</ns2:identifier>
+    </ns2:identifiers>
+    <ns2:inboundAgrs>
+        <ns2:inAgr id="PROJECTS|RAJ_B2B_TEST|RAJ_INBOUND1777453935041" agrName="raj inbound" agrDesc="" docId="RAJ_DOCUMENT2" backendIntgCode="RGPROJE_FTP_RECEIVE" backendIntgVersion="01.00.0000" updatedDate="2026-06-04T03:26:27.027+0000" createdDate="2026-04-29T09:12:15.015+0000" lastDeployed="2026-06-04T03:26:27.027+0000" status="active" tpmVersion="phase2">
+            <ns2:params validate="true" fa="true" duplicateCtrlNumCheck="false"/>
+        </ns2:inAgr>
+    </ns2:inboundAgrs>
+    <ns2:outboundAgrs>
+        <ns2:outAgr id="PROJECTS|RAJ_B2B_TEST|OUTBND1777453970028" agrName="outBnd" agrDesc="" docId="RAJ_DOCUMENT2" updatedDate="2026-06-15T09:59:22.043931774Z" createdDate="2026-04-29T09:12:50.050+0000" lastDeployed="2026-06-11T03:59:28.028+0000" status="active" transportId="PROJECTS|RAJ_B2B_TEST|TEST_TRANSP0AF4217019DD86ECFE300000141C1E0E" tpmVersion="phase2">
+            <ns2:params validate="false" fa="true"/>
+            <ns2:hostIdentifiersRef>
+                <ns2:identifier id="3153621047064517"/>
+            </ns2:hostIdentifiersRef>
+            <ns2:tpIdentifiersRef>
+                <ns2:identifier id="604500079445274"/>
+            </ns2:tpIdentifiersRef>
+        </ns2:outAgr>
+    </ns2:outboundAgrs>
+    <ns2:transports>
+        <ns2:transport id="PROJECTS|RAJ_B2B_TEST|TEST_TRANSP0AF4217019DD86ECFE300000141C1E0E" transportName="Test transp" transportDesc="" connectionId="RGTEST" charEncoding="UTF8" updatedDate="2026-05-18T10:56:15.015+0000" createdDate="2026-04-29T08:50:45.045+0000" lastEnabled="2026-06-04T03:26:19.019+0000" status="DEPLOYED" transportType="FTP" direction="SEND_AND_RECEIVE" integrationNamePrefix="rgProje" integrationIdentifierPrefix="RGPROJE" transInbIntgCode="RGPROJE_FTP_RECEIVE" transInbIntgVersion="01.00.0000" transOutbIntgCode="RGPROJE_FTP_SEND" transOutbIntgVersion="01.00.0000" transOutbIntgName="rgProje FTP Send" transInbIntgName="rgProje FTP Receive" tpmVersion="phase2" container_id="PROJECTS|RAJ_B2B_TEST">
+            <ns2:params>
+                <ns2:param name="LIST_PhysicalDirectory">/pub/example</ns2:param>
+                <ns2:param name="IncludeFilesWildCard">*</ns2:param>
+                <ns2:param name="MinimumAge">0</ns2:param>
+                <ns2:param name="MaxRaiseSize">100</ns2:param>
+                <ns2:param name="Recursive">false</ns2:param>
+                <ns2:param name="WRITE_PhysicalDirectory">/pub/example</ns2:param>
+                <ns2:param name="FileNamingConvention">test</ns2:param>
+                <ns2:param name="IncludeFiles"></ns2:param>
+            </ns2:params>
+        </ns2:transport>
+    </ns2:transports>
+</tradingpartner>
